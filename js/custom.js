@@ -99,7 +99,7 @@ function changeLanguage(language) {
       contactTitle: "CONTACT",
       contactSend: "Send",
       experience1Title: "Web Developer - GLOBUILD SARL",
-                experience1Description: "Development of web applications and analysis of technical needs. Responsible for data entry and process optimization to improve the efficiency of the company's activities.",
+                experience1Description: "Development of web applications and desktop also analysis of technical needs. Responsible for data entry and process optimization to improve the efficiency of the company's activities.",
                 experience2Title: "Web Developer Intern - AXA",
                 experience2Description: "Participation in the creation and optimization of websites to improve user experience and site performance. Collaboration with the team to implement solutions tailored to client needs.",
                 experience3Title: "Data Entry Agent (Freelance) - SNCF",
