@@ -643,6 +643,15 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         alert("Erreur lors de l'envoi : " + error.text);
       });
   });
+  emailjs.sendForm("service_gmail", "template_contact", this)
+  .then(function() {
+    // ✅ Message envoyé avec succès
+    document.getElementById("contactForm").reset(); // 🔄 Vide tous les champs
+  }, function(error) {
+    // ❌ Erreur lors de l'envoi
+    console.error("Erreur EmailJS :", error);
+  });
+
 </script>
 
 </body>
