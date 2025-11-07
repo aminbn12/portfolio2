@@ -167,8 +167,8 @@ function changeLanguage(language) {
         document.getElementById("experience3Description").innerText = texts[language].experience3Description;
         document.getElementById("experience4Title").innerText = texts[language].experience4Title;
         document.getElementById("experience4Description").innerText = texts[language].experience4Description;
-        document.getElementById("experience5Title").innerText = texts[language].experience4Title;
-        document.getElementById("experience5Description").innerText = texts[language].experience4Description;
+        document.getElementById("experience5Title").innerText = texts[language].experience5Title;
+        document.getElementById("experience5Description").innerText = texts[language].experience5Description;
         document.getElementById("awardsTitle").innerText = texts[language].awardsTitle;
 document.getElementById("award1Title").innerText = texts[language].award1Title;
 document.getElementById("award1Description").innerText = texts[language].award1Description;
