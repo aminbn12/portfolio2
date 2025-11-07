@@ -628,10 +628,9 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 
         });
     </script> 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
+    <script>
   (function(){
-    emailjs.init("-coiPU744oaZd1ttL"); // Remplace par ton vrai User ID EmailJS
+    emailjs.init("-coiPU744oaZd1ttL"); // Ton User ID EmailJS
   })();
 
   document.getElementById("contactForm").addEventListener("submit", function(e) {
@@ -640,32 +639,13 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     emailjs.sendForm("service_er8lbek", "template_ta2iexp", this)
       .then(function() {
         alert("Message envoyé avec succès !");
+        document.getElementById("contactForm").reset(); // 🔄 Vide tous les champs
       }, function(error) {
         alert("Erreur lors de l'envoi : " + error.text);
       });
   });
-
-
-  (function(){
-    emailjs.init("-coiPU744oaZd1ttL"); // Ton User ID public
-  })();
-
-  document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    emailjs.sendForm("service_gmail", "template_contact", this)
-      .then(function() {
-        // ✅ Message envoyé
-        document.getElementById("contactForm").reset(); // 🔄 Vide tous les champs
-      }, function(error) {
-        // ❌ Erreur
-        console.error("Erreur EmailJS :", error);
-      });
-  });
-
-
-
 </script>
+
 
 </body>
 
