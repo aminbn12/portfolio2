@@ -63,6 +63,8 @@ function changeLanguage(language) {
                 award2Description: "Développement et optimisation d'une application web pour améliorer les processus de saisie de données et la gestion des opérations chez GLOBUILD SARL.",
                 award3Title: "Stage Développeur Web - AXA",
                 award3Description: "Participation à la conception de sites web optimisés et performants pour améliorer l'expérience utilisateur.",
+                award4Title: "Développement et Gestion d'application - Fondation Mohammed 6",
+                award4Description: "Développement en cours d'une application web pour la gestion des étudiants, avec REACT et JAVA SPRINGBOOT. Emplois du temps créés et mis à jour via Konosys et Excel.",
                 skillsTitle: "Compétences en Codage",
                 skillHtml5: "HTML5",
                 skillHtml5Level: "Excellent",
@@ -116,6 +118,8 @@ function changeLanguage(language) {
                 award2Description: "Development and optimization of a web application to improve data entry processes and operations management at GLOBUILD SARL.",
                 award3Title: "Web Developer Intern - AXA",
                 award3Description: "Participation in the design of optimized and high-performance websites to improve the user experience.",
+                award4Title: "Application Development and Management - Mohammed VI Foundation",
+                award4Description: "Participation in the design of optimized and high-performance websites to improve the user experience.",
                 skillsTitle: "Coding Skills",
         skillHtml5: "HTML5",
         skillHtml5Level: "Excellent",
@@ -176,6 +180,8 @@ document.getElementById("award2Title").innerText = texts[language].award2Title;
 document.getElementById("award2Description").innerText = texts[language].award2Description;
 document.getElementById("award3Title").innerText = texts[language].award3Title;
 document.getElementById("award3Description").innerText = texts[language].award3Description;
+document.getElementById("award4Title").innerText = texts[language].award3Title;
+document.getElementById("award4Description").innerText = texts[language].award3Description;
 document.getElementById("skillsTitle").innerText = texts[language].skillsTitle;
 document.getElementById("skillHtml5").innerText = texts[language].skillHtml5;
 document.getElementById("skillHtml5Level").innerText = texts[language].skillHtml5Level;
