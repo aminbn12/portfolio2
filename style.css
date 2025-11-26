@@ -62,6 +62,34 @@ img { max-width: 100%; display: block; }
     font-weight: bold; 
 }
 .btn-primary:hover { background: #4cdbb9; }
+/* =========================================
+   STYLE DU LIEN ACTIF (PC & MOBILE)
+   ========================================= */
+
+/* État normal du lien */
+.nav-link {
+    position: relative;
+    /* Autres styles existants... */
+}
+
+/* État ACTIF (Quand on scrolle sur la section) */
+.nav-link.active-link {
+    color: var(--accent) !important; /* Force la couleur Cyan */
+    font-weight: 600;
+    
+    /* La ligne en dessous */
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 5px; /* Espace entre le texte et la ligne */
+    
+    transition: all 0.3s ease;
+}
+
+/* Pour éviter que le menu saute quand la ligne apparaît */
+.nav-item {
+    height: 30px; /* Fixe une hauteur pour la stabilité */
+    display: flex;
+    align-items: center;
+}
 
 /* =========================================
    NAVBAR
@@ -85,6 +113,7 @@ img { max-width: 100%; display: block; }
     border-radius: 4px;
     color: var(--accent);
 }
+
 
 /* Langue */
 .lang-switcher img { 
