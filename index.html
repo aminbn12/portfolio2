@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benarbia Mohammed-Amine | Portfolio</title>
+    <link rel="icon" type="image/png" href="img/favicon.png"> 
+    <!-- Polices et Icônes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    
+    <!-- Fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#page-top" class="logo">Ben.<span class="text-accent">Dev</span></a>
+            
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link" id="navAbout">À Propos</a></li>
+                <li><a href="#experience" class="nav-link" id="navExperience">Expériences</a></li>
+                <li><a href="#portfolio" class="nav-link" id="navPortfolio">Portfolio</a></li>
+                <li><a href="#skills" class="nav-link" id="navSkills">Compétences</a></li>
+                <li><a href="#awards" class="nav-link" id="navAwards">Succès</a></li>
+                <li><a href="#contact" class="nav-link btn-contact" id="navContact">Contact</a></li>
+                
+                <!-- Switch Langue -->
+                <li class="lang-switcher">
+                    <img src="img/fr.png" alt="FR" onclick="changeLanguage('fr')" title="Français">
+                    <img src="img/gb.png" alt="EN" onclick="changeLanguage('en')" title="English">
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header / Hero -->
+    <section id="about" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="greeting">Bonjour, je suis</p>
+                <h1>Benarbia <span class="text-accent">Mohammed-Amine</span></h1>
+                <h2 id="role">Développeur full stack avec une expertise en gestion de projets et développement d'applications web. Passionné par la création de solutions numériques innovantes.</h2>
+                
+                <div class="bio-card">
+                    <p id="experienceText">Je possède une solide expérience dans le développement d'applications web et la gestion de projets techniques. Polyvalent et autonome, j'ai travaillé sur plusieurs projets, notamment pour Gloservices et Special Olympics Morocco, en assurant la qualité et l'efficacité des solutions mises en place.</p>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="img/CV Benarbia Mohammed Amine.pdf" class="btn btn-primary" id="downloadCV" download>Télécharger mon CV</a>
+                    <div class="socials">
+                        <a href="https://www.linkedin.com/in/mohammed-amine-benarbia-841397177/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/Amin1gaming" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-img">
+                <div class="img-frame">
+                    <img src="img/profile.jpg" alt="Benarbia Mohammed Amine">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expériences (Timeline) -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title" id="experienceTitle">Expériences</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025 - Present</div>
+                    <div class="timeline-content">
+                        <h3 id="experience5Title">Développement et Gestion d'application - Fondation Mohammed 6</h3>
+                        <p id="experience5Description">Développement en cours d'une application web de planification et de gestion des étudiants, avec REACT et JAVA SPRINGBOOT. Création et mise à jour des emplois du temps via Konosys ET Excel.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 - 2024</div>
+                    <div class="timeline-content">
+                        <h3 id="experience4Title">Développeur Application Web - Special Olympics Morocco</h3>
+                        <p id="experience4Description">Chargé des associations et gestion IT. Responsable du développement d'une application pour faciliter la gestion des événements sportifs et des associations partenaires.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020 - 2022</div>
+                    <div class="timeline-content">
+                        <h3 id="experience1Title">Développeur Web - GLOBUILD SARL</h3>
+                        <p id="experience1Description">Développement d'applications web et desktop et analyse des besoins techniques. Responsable de la saisie de données et optimisation des processus.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2018 - 2020</div>
+                    <div class="timeline-content">
+                        <h3 id="experience3Title">Agent de Saisie des Données (Freelance) - SNCF</h3>
+                        <p id="experience3Description">Travail en tant qu'agent de saisie des données, fournissant un support administratif et une gestion précise des données.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2016 - 2017</div>
+                    <div class="timeline-content">
+                        <h3 id="experience2Title">Stage Développeur Web - AXA</h3>
+                        <p id="experience2Description">Participation à la création et à l'optimisation de sites web pour améliorer l'expérience utilisateur et les performances des sites.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title" id="portfolioTitle">Portfolio</h2>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all" id="portfolioAll">tout</button>
+                <button class="filter-btn" data-filter="consulting" id="portfolioWebApp">Web App</button>
+                <button class="filter-btn" data-filter="finance" id="portfolioDesktopApp">desctop App</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Projet 1 -->
+<div class="portfolio-card consulting">
+    <div class="portfolio-img">
+        <img src="img/portfolio/p-4.jpg" alt="Projet">
+        <!-- L'attribut data-modal est maintenant sur la DIV overlay -->
+        <div class="overlay project-trigger" data-modal="modal4">
+            <i class="fas fa-plus"></i> <!-- L'icône reste juste pour le visuel -->
+        </div>
+    </div>
+</div>
+
+<!-- Projet 2 -->
+<div class="portfolio-card finance">
+    <div class="portfolio-img">
+        <img src="img/portfolio/p-5.jpg" alt="Projet">
+        <div class="overlay project-trigger" data-modal="modal5">
+            <i class="fas fa-plus"></i>
+        </div>
+    </div>
+</div>
+
+<!-- Projet 3 -->
+<div class="portfolio-card consulting">
+    <div class="portfolio-img">
+        <img src="img/portfolio/p-6.jpg" alt="Projet">
+        <div class="overlay project-trigger" data-modal="modal6">
+            <i class="fas fa-plus"></i>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title" id="skillsTitle">Compétences</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-card">
+                    <i class="devicon-html5-plain colored"></i>
+                    <h3 id="skillHtml5">HTML5</h3>
+                    <span class="skill-level" id="skillHtml5Level">Excellent</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <h3 id="skillJavaScript">JavaScript</h3>
+                    <span class="skill-level" id="skillJavaScriptLevel">Bon</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-python-plain colored"></i>
+                    <h3 id="skillPython">Python</h3>
+                    <span class="skill-level" id="skillPythonLevel">Moyen</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-css3-plain colored"></i>
+                    <h3 id="skillCss3">CSS3</h3>
+                    <span class="skill-level" id="skillCss3Level">Excellent</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-jquery-plain colored"></i>
+                    <h3 id="skillJQuery">JQuery</h3>
+                    <span class="skill-level" id="skillJQueryLevel">Moyen</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-php-plain colored"></i>
+                    <h3 id="skillPhp">PHP</h3>
+                    <span class="skill-level" id="skillPhpLevel">Excellent</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-java-plain colored"></i>
+                    <h3 id="skillJava">Java</h3>
+                    <span class="skill-level" id="skillJavaLevel">Bon</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-ruby-plain colored"></i>
+                    <h3 id="skillRuby">Ruby</h3>
+                    <span class="skill-level" id="skillRubyLevel">Débutant</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards / Succès -->
+    <section id="awards" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title" id="awardsTitle">Succès</h2>
+            <div class="awards-grid">
+                
+                <div class="award-card">
+                    <i class="fas fa-trophy award-icon"></i>
+                    <span class="date">2025 - Present</span>
+                    <h4 id="award4Title">Développement - Fondation Mohammed 6</h4>
+                    <p id="award4Description">Développement en cours d'une application web pour la gestion des étudiants (React/Springboot).</p>
+                </div>
+
+                <div class="award-card">
+                    <i class="fas fa-medal award-icon"></i>
+                    <span class="date">2022 - 2024</span>
+                    <h4 id="award1Title">Responsable IT - Special Olympics</h4>
+                    <p id="award1Description">Développement d'une application pour gérer les événements sportifs.</p>
+                </div>
+
+                <div class="award-card">
+                    <i class="fas fa-star award-icon"></i>
+                    <span class="date">2020 - 2022</span>
+                    <h4 id="award2Title">Développeur Web - GLOBUILD</h4>
+                    <p id="award2Description">Optimisation d'une application web pour la saisie de données.</p>
+                </div>
+
+                <div class="award-card">
+                    <i class="fas fa-certificate award-icon"></i>
+                    <span class="date">2016 - 2017</span>
+                    <h4 id="award3Title">Stage - AXA</h4>
+                    <p id="award3Description">Conception de sites web optimisés pour l'expérience utilisateur.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" id="contactTitle">CONTACT</h2>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>Rabat, Maroc</div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>+212 (0)7 08 21 22 30</div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>benaminmed@gmail.com</div>
+                    </div>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <input type="text" name="fullName" placeholder="Nom" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Sujet" required>
+                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary" id="contactSend">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals (Pop-ups) -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="img/portfolio/p-4.jpg" alt="">
+            <h3>Gloservices</h3>
+            <p>Dans le cadre de mon stage en développement informatique, j'ai développé le site web Gloservices avec Laravel. Intégration d'un chatbot et gestion autonome des services utilisateurs.</p>
+        </div>
+    </div>
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="img/portfolio/p-5.jpg" alt="">
+            <h3>OCR Application</h3>
+            <p>L’application OCR, développée en Java avec Tesseract et Apache POI, automatise l'extraction de texte à partir d'images et de PDF vers Excel.</p>
+        </div>
+    </div>
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="img/portfolio/p-6.jpg" alt="">
+            <h3>Event Manager</h3>
+            <p>Conception de formulaires ergonomiques et sécurisés pour une application de gestion d'événements en Laravel.</p>
+        </div>
+    </div>
+
+     <!-- Notification Container -->
+    <div id="notification" class="notification">Votre message a été envoyé avec succès ! 🚀</div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
