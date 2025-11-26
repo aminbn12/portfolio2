@@ -181,7 +181,19 @@ function changeLanguage(language) {
       skillJava: "Java",
       skillJavaLevel: "Bon",
       skillRuby: "Ruby",
-      skillRubyLevel: "Débutant"
+      skillRubyLevel: "Débutant",
+      skillLaravel: "Laravel",
+      skillLaravelLevel: "Excellent",
+      skillSpring: "Spring Boot",
+      skillSpringLevel: "Bon",
+      skillDocker: "Docker",
+      skillDockerLevel: "Moyen",
+      skillGithub: "GitHub",
+      skillGithubLevel: "Excellent",
+      skillPostman: "Postman",
+      skillPostmanLevel: "Bon",
+      skillReact: "React",
+      skillReactLevel: "Bon"
     },
     en: {
       navAbout: "About",
@@ -236,7 +248,19 @@ function changeLanguage(language) {
       skillJava: "Java",
       skillJavaLevel: "Good",
       skillRuby: "Ruby",
-      skillRubyLevel: "Beginner"
+      skillRubyLevel: "Beginner",
+      skillLaravel: "Laravel",
+      skillLaravelLevel: "Excellent",
+      skillSpring: "Spring Boot",
+      skillSpringLevel: "Good",
+      skillDocker: "Docker",
+      skillDockerLevel: "Average",
+      skillGithub: "GitHub",
+      skillGithubLevel: "Excellent",
+      skillPostman: "Postman",
+      skillPostmanLevel: "Good",
+      skillReact: "React",
+      skillReactLevel: "Good"
     }
   };
 
@@ -295,6 +319,29 @@ function changeLanguage(language) {
   document.getElementById("skillJavaLevel").innerText = texts[language].skillJavaLevel;
   document.getElementById("skillRuby").innerText = texts[language].skillRuby;
   document.getElementById("skillRubyLevel").innerText = texts[language].skillRubyLevel;
+  // Laravel
+  document.getElementById("skillLaravel").innerText = texts[language].skillLaravel;
+  document.getElementById("skillLaravelLevel").innerText = texts[language].skillLaravelLevel;
+
+  // Spring Boot (Assurez-vous d'avoir corrigé l'ID dans le HTML en 'skillSpringLevel')
+  document.getElementById("skillSpring").innerText = texts[language].skillSpring;
+  document.getElementById("skillSpringLevel").innerText = texts[language].skillSpringLevel;
+
+  // Docker
+  document.getElementById("skillDocker").innerText = texts[language].skillDocker;
+  document.getElementById("skillDockerLevel").innerText = texts[language].skillDockerLevel;
+
+  // GitHub
+  document.getElementById("skillGithub").innerText = texts[language].skillGithub;
+  document.getElementById("skillGithubLevel").innerText = texts[language].skillGithubLevel;
+
+  // Postman
+  document.getElementById("skillPostman").innerText = texts[language].skillPostman;
+  document.getElementById("skillPostmanLevel").innerText = texts[language].skillPostmanLevel;
+
+  // React
+  document.getElementById("skillReact").innerText = texts[language].skillReact;
+  document.getElementById("skillReactLevel").innerText = texts[language].skillReactLevel;
 }
 // =========================================
     // 4. EMAIL JS (AVEC NOTIFICATION)
