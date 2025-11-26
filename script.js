@@ -120,6 +120,16 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.overflow = 'auto'; // Réactive le scroll
         }
     }
+     modals.forEach(modal => {
+        modal.addEventListener('click', (e) => {
+            // Si l'élément cliqué est PRÉCISÉMENT le fond gris (la modale)
+            // et pas l'image ou le texte à l'intérieur
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Réactive le scroll
+            }
+        });
+    });
 
     // =========================================
     // 5. EMAIL JS & NOTIFICATION

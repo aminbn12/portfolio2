@@ -121,7 +121,9 @@ img { max-width: 100%; display: block; }
 }
 .lang-switcher img:hover { transform: scale(1.1); }
 
-.nav-toggle { display: none; color: var(--text-bright); font-size: 1.5rem; cursor: pointer; }
+.nav-toggle { display: none; color: var(--text-bright); font-size: 1.5rem; cursor: pointer; 
+
+}
 
 /* =========================================
    HERO SECTION
@@ -311,15 +313,52 @@ img { max-width: 100%; display: block; }
 /* =========================================
    RESPONSIVE
    ========================================= */
+/* =========================================
+   RESPONSIVE (MOBILE)
+   ========================================= */
 @media (max-width: 768px) {
-    .nav-toggle { display: block; }
-    .nav-menu {
-        position: fixed; top: 0; right: -100%; width: 75%; height: 100vh;
-        background: var(--bg-light); flex-direction: column; 
-        justify-content: center; transition: 0.3s; padding: 0;
-    }
-    .nav-menu.active { right: 0; box-shadow: -10px 0 30px rgba(0,0,0,0.5); }
     
+    /* 1. Le bouton Burger / X */
+    .nav-toggle { 
+        display: block;
+        
+        /* C'est ICI la solution : */
+        position: fixed; /* Il reste accroché à l'écran */
+        top: 25px;       /* Ajustez la hauteur pour aligner avec le logo */
+        right: 30px;     /* Marge à droite */
+        z-index: 2001;   /* Très important : Plus élevé que le menu (2000) */
+        
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    /* 2. Le Menu latéral */
+    .nav-menu {
+        position: fixed; 
+        top: 0; 
+        right: -100%; /* Caché à droite */
+        
+        width: 75%;   /* Largeur du menu */
+        height: 100vh;
+        
+        background: var(--bg-light); 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; /* Centre le texte */
+        padding: 0;
+        
+        transition: 0.3s ease-in-out;
+        z-index: 2000; /* Inférieur au bouton (2001) */
+        box-shadow: none;
+    }
+
+    /* Quand le menu est ouvert */
+    .nav-menu.active { 
+        right: 0; 
+        box-shadow: -10px 0 30px rgba(0,0,0,0.5); 
+    }
+    
+    /* Ajustements du texte */
     .hero-content { grid-template-columns: 1fr; text-align: center; }
     .bio-card { text-align: left; }
     .contact-wrapper { grid-template-columns: 1fr; }
